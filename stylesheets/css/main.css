@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 .ui.grid {
   margin: 0px; }
 
@@ -49,7 +50,9 @@ header {
     z-index: 10;
     text-transform: uppercase;
     color: #ae00b4;
-    font-size: 17pt; }
+    font-size: 17pt;
+    font-family: 'Slabo 27px', serif;
+    font-weight: normal; }
   .page-title h1:before {
     content: '';
     position: absolute;

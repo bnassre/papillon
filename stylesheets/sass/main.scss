@@ -3,6 +3,8 @@ $darkpurple : #8c0090;
 $gray       : #ccc;
 $darkgray   : #676767;
 
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
 .ui.grid {
 	margin: 0px;
 }
@@ -73,6 +75,8 @@ header {
 		text-transform: uppercase;
 		color: $purple;
 		font-size: 17pt;
+		font-family: 'Slabo 27px', serif;
+		font-weight: normal;
 	}
 
 	h1:before {
