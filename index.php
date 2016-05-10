@@ -13,7 +13,21 @@
 	
 	<section id="slider">
 		<div class="ui container">
-
+            
+            <div class="slide-1">
+                
+                <div class="text"></div>
+                
+            </div>
+            <div class="slide-2"></div>
+            
+            <div class="navigation">
+                <div class="dot active dots-1"></div>
+                <div class="dot dots-2"></div>
+                <div class="dot dots-3"></div>
+                <div class="dot dots-4"></div>
+            </div>
+            
 		</div>
 		<img src="./images/arrow-down.png" >
 	</section>
@@ -51,8 +65,8 @@ or randomised words which don't look even slightly believable.</p>
 
 
 	<footer><?php include 'footer.php';?></footer>
-	<!-- <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="./bower_components/semantic/dist/semantic.min.js"></script> -->
-	
+	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="./bower_components/semantic/dist/semantic.min.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
