@@ -1,7 +1,167 @@
-body {
+$purple     : #ae00b4;
+$darkpurple : #8c0090;
+$gray       : #ccc;
+$darkgray   : #676767;
+
+.ui.grid {
+	margin: 0px;
+}
+
+.segment {
+	border: none !important;
 }
 
 header {
-	height: 620px;
-	background: #ae00b4;
+
+	overflow-x: hidden;
+
+	.ui.segment {
+		background: $purple !important;
+		height: 100px;
+	}
+
+	.curve {
+		background: $gray url('../../images/header-arc.svg');
+		background-size: 100% auto;
+		height: 100px;
+		background-repeat: no-repeat;
+		margin: 0px -50px;
+	}
+}
+
+#slider {
+	min-height: 350px;
+	background: $gray; 
+	height: calc(100% - 200px);
+	position: relative;
+
+	img {
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		margin-left: -50px;
+		width: 100px;
+		cursor: pointer;
+
+		transition: bottom 0.2s linear;
+		-moz-transition: bottom 0.2s linear;
+		-webkit-transition: bottom 0.2s linear;
+	}
+
+	img:hover {
+		bottom: 0px;
+	}
+}
+
+.page-title {
+	
+	text-align: center;
+	margin: 20px 0px 30px;
+
+	h1 {
+		position: relative;
+		text-align: center;
+		margin: 0px;
+		
+	}
+	h1 span {
+		position: relative;
+		padding: 14px 20px 5px;
+		background: #fff;
+		display: inline-block;
+		z-index: 10;
+		text-transform: uppercase;
+		color: $purple;
+		font-size: 17pt;
+	}
+
+	h1:before {
+		content: '';
+		position: absolute;
+		width: 30%;
+		height: 8px;
+		margin-left: -15%;
+
+		top: 28px;
+		left: 50%;
+		
+		border-top: 3px solid $purple;
+		border-bottom: 3px solid $purple;
+
+	}
+
+	p {
+		width: 40%;
+		color: $darkgray;
+		margin: 0 auto;
+	}
+}
+
+#quote {
+	
+	text-align: center;
+
+	p {
+		color: $purple;
+		width: 80%;
+		padding: 30px;
+		margin: 0 auto;
+		position: relative;
+		font-size: 18pt;
+	}
+
+	p:before, p:after {
+		display: inline-block;
+		content: '';
+		width: 50px;
+		height: 50px;
+		position: absolute;
+	}
+
+	p:before {
+		background-image: url('../../images/quote-left.png');
+		left: -30px;
+		top: -5px;
+	}
+
+	p:after {
+		background-image: url('../../images/quote-right.png');
+		right: -30px;
+		bottom: -5px;
+	}
+
+	span {
+		color: $gray;
+		font-size: 14pt;
+	}
+
+	span:before {
+		content: '---------';
+		letter-spacing: -3px;
+		padding-right: 20px;
+	}
+
+}
+
+
+
+#footer {
+	color: #fff;
+
+	.ribbon {
+		background: url('../../images/footer-curve.png');
+		background-position: left top;
+		background-repeat: no-repeat;
+
+		height: 44px;
+	}
+
+	.footer-content {
+		background: $purple;
+	}
+}
+
+#copyright {
+	background: $darkpurple;
+	padding: 20px
 }
