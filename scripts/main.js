@@ -39,4 +39,8 @@ $(document).ready(function() {
         pause = false;
     });
     
+    $('.getdown').click(function() {
+        $('html, body').animate({ scrollTop : window.innerHeight}, 300);
+    });
+    
 });
