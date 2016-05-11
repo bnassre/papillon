@@ -1,0 +1,153 @@
+$purple     : #ae00b4;
+$darkpurple : #8c0090;
+$gray       : #e4e5e7;
+$darkgray   : #676767;
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+.services {
+    margin-bottom: 50px;
+    position: relative;
+    
+    .item {
+        margin-bottom: 25px;
+        transition: all 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+        box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+        
+        .img-holder {
+            background: $purple;
+            text-align: center;
+            padding: 20px;
+            
+            transition: all 0.2s linear;
+            
+            img {
+                margin: auto auto;
+                height: 120px;
+            }
+        }
+        
+        .desc {
+            min-height: 100px;
+            background: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            
+            transition: all 0.2s linear;
+            
+            h3 {
+                font-family: 'Slabo 27px', serif;
+                font-weight: normal;
+                color: $purple;
+                font-size: 18pt;
+                margin: 0px;
+                margin-bottom: 5px;
+            }
+            
+            p {
+                margin: 0px;
+            }
+            
+            button {
+                background: #fff;
+                border: none;
+                color: $purple;
+                padding: 10px 30px;
+                font-size: 14pt;
+                margin: 10px 0px;
+                font-family: 'Slabo 27px', serif;
+                font-weight: bold;
+                display: none;
+                
+                &:hover {
+                    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                }
+                
+                &:focus {
+                    outline: none;
+                }
+            }
+            
+        }
+        
+        &:hover {
+            box-shadow: 3px 3px 0px 2px rgba(0,0,0,0.06);
+            /* transform: scale(1.04); */
+            
+            .img-holder {
+                background: $darkpurple;
+            }
+            
+            .desc {
+                background: $purple;
+                
+                h3, p {
+                    display: none;
+                }
+
+                button {
+                    margin-top: 20px;
+                    display: inline-block;
+                }
+            }
+            
+        }
+        
+    }
+    
+    .overlay {
+        background: #fff;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+        z-index: 11;
+        text-align: center;
+        padding: 100px 150px;
+        display: none;
+        
+        img {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-family: 'Slabo 27px', serif;
+            font-weight: normal;
+            color: $purple;
+            font-size: 18pt;
+            margin: 0px;
+            margin-bottom: 5px;
+        }
+        
+        span {
+            color: $darkgray;
+            margin-bottom: 30px;
+            display: inline-block;
+            width: 300px;
+        }
+        
+        p {
+            color: $purple;
+        }
+        
+        .close {
+            position: absolute;
+            top: 35px;
+            right: 35px;
+            width: 31px;
+            height: 31px;
+            background: url('../../images/close-btn.png');
+            background-repeat: no-repeat;
+            cursor: pointer;
+            
+            transition: all 0.3s linear;
+            
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+    }
+    
+}

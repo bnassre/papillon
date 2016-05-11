@@ -84,10 +84,12 @@ header {
         font-size: 15pt;
         background: none;
         color: #ae00b4; }
-      #slider .slide .text button:hover {
-        background: #ae00b4;
-        color: #fff;
-        transition: all 0.2s linear; }
+        #slider .slide .text button:hover {
+          background: #ae00b4;
+          color: #fff;
+          transition: all 0.2s linear; }
+        #slider .slide .text button:focus {
+          outline: none; }
   #slider .ui.container {
     position: relative; }
     #slider .ui.container .navigation {
