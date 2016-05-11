@@ -2,26 +2,92 @@
 .ui.grid {
   margin: 0px; }
 
+.content {
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  padding-top: 20px; }
+
 .segment {
   border: none !important; }
 
 header {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative;
+  z-index: 10; }
   header .ui.segment {
     background: #ae00b4 !important;
     height: 100px; }
   header .curve {
-    background: #ccc url("../../images/header-arc.svg");
+    background: url("../../images/header-arc.svg");
     background-size: 100% auto;
     height: 100px;
     background-repeat: no-repeat;
-    margin: 0px -50px; }
+    margin: 0px -150px; }
+
+.grayback {
+  background: #e4e5e7;
+  height: 100%; }
 
 #slider {
   min-height: 350px;
-  background: #ccc;
+  background-color: #e4e5e7;
   height: calc(100% - 200px);
   position: relative; }
+  #slider .slide {
+    visibility: hidden;
+    transition: all 0.3s linear;
+    opacity: 0; }
+    #slider .slide.active {
+      visibility: visible;
+      opacity: 1; }
+      #slider .slide.active .text {
+        border-radius: 50%;
+        height: 800px;
+        width: 800px; }
+      #slider .slide.active img {
+        left: -60px; }
+    #slider .slide img {
+      transition: left 2s ease-out;
+      position: absolute;
+      top: -55px;
+      left: 0px; }
+    #slider .slide .text {
+      transition: all 0.6s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+      position: absolute;
+      /*height: 800px;
+            width: 800px; */
+      height: 800px;
+      width: 600px;
+      right: -200px;
+      top: -200px;
+      background: rgba(0, 0, 0, 0.14);
+      border-radius: 10%;
+      z-index: 1;
+      color: #fff; }
+      #slider .slide .text span {
+        margin-top: 100px;
+        padding: 150px 300px 0px 110px;
+        display: inline-block;
+        line-height: 1;
+        font-size: 30pt;
+        font-family: 'Slabo 27px', serif;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        min-width: 800px;
+        max-width: 800px; }
+      #slider .slide .text button {
+        margin-left: 110px;
+        margin-top: 20px;
+        border: 3px solid #ae00b4;
+        padding: 12px 24px;
+        border-radius: 30px;
+        font-size: 15pt;
+        background: none;
+        color: #ae00b4; }
+      #slider .slide .text button:hover {
+        background: #ae00b4;
+        color: #fff;
+        transition: all 0.2s linear; }
   #slider .ui.container {
     position: relative; }
     #slider .ui.container .navigation {
@@ -39,6 +105,9 @@ header {
         margin-bottom: 18px;
         margin-left: -2px;
         transition: all 0.2s linear; }
+      #slider .ui.container .navigation .dot:hover {
+        transform: scale(1.2);
+        cursor: pointer; }
       #slider .ui.container .navigation .dot:before {
         content: '';
         width: 0px;
@@ -81,22 +150,23 @@ header {
         top: 18px;
         height: 14px;
         margin-left: 4px; }
-  #slider img {
+  #slider > img {
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -50px;
     width: 100px;
     cursor: pointer;
-    transition: bottom 0.2s linear;
-    -moz-transition: bottom 0.2s linear;
-    -webkit-transition: bottom 0.2s linear; }
+    z-index: 10;
+    transition: bottom 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+    -moz-transition: bottom 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+    -webkit-transition: bottom 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53); }
   #slider img:hover {
     bottom: 0px; }
 
 .page-title {
   text-align: center;
-  margin: 20px 0px 30px; }
+  margin: 0px 0px 30px; }
   .page-title h1 {
     position: relative;
     text-align: center;
@@ -151,7 +221,7 @@ header {
     right: -30px;
     bottom: -5px; }
   #quote span {
-    color: #ccc;
+    color: #e4e5e7;
     font-size: 14pt; }
   #quote span:before {
     content: '---------';

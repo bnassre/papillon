@@ -1,12 +1,19 @@
 $purple     : #ae00b4;
 $darkpurple : #8c0090;
-$gray       : #ccc;
+$gray       : #e4e5e7;
 $darkgray   : #676767;
 
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 
 .ui.grid {
 	margin: 0px;
+}
+
+.content {
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    padding-top: 20px;
 }
 
 .segment {
@@ -16,6 +23,8 @@ $darkgray   : #676767;
 header {
 
 	overflow-x: hidden;
+    position: relative;
+    z-index: 10;
 
 	.ui.segment {
 		background: $purple !important;
@@ -23,23 +32,111 @@ header {
 	}
 
 	.curve {
-		background: $gray url('../../images/header-arc.svg');
+		background: url('../../images/header-arc.svg');
 		background-size: 100% auto;
 		height: 100px;
 		background-repeat: no-repeat;
-		margin: 0px -50px;
+		margin: 0px -150px;
 	}
+}
+
+.grayback {
+    background: $gray;
+    height: 100%;
 }
 
 #slider {
 	min-height: 350px;
-	background: $gray; 
+	background-color: $gray; 
 	height: calc(100% - 200px);
 	position: relative;
     
+    .slide {
+        
+        visibility: hidden;
+        transition: all 0.3s linear;
+        opacity: 0;
+        
+        &.active {
+            visibility: visible;
+            opacity: 1;
+            
+            .text {
+                border-radius: 50%;
+                height: 800px;
+                width: 800px;
+            }
+            
+            img {
+                left: -60px;
+            }
+        }
+        
+        img {
+            transition: left 2s ease-out;
+            
+            position: absolute;
+            top: -55px;
+            left: 0px;
+        }
+        .text {
+            transition: all 0.6s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+            
+            position: absolute;
+            /*height: 800px;
+            width: 800px; */
+            
+            height: 800px;
+            width: 600px;
+            
+            right: -200px;
+            top: -200px;
+            background: rgba(0,0,0,0.14);
+            // border-radius: 50%;
+            border-radius: 10%;
+            
+            z-index: 1;
+            color: #fff;
+
+            span {
+                margin-top: 100px;
+                padding: 150px 300px 0px 110px;
+                display: inline-block;
+                line-height: 1;
+                font-size: 30pt;
+                font-family: 'Slabo 27px', serif;
+                text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+                
+                min-width: 800px;
+                max-width: 800px;
+            }
+
+            button {
+                margin-left: 110px;
+                margin-top: 20px;
+                border: 3px solid $purple;
+                padding: 12px 24px;
+                border-radius: 30px;
+                font-size: 15pt;
+                background: none;
+                color: $purple;
+            }
+
+            button:hover {
+                background: $purple;
+                color: #fff;
+
+                transition: all 0.2s linear;
+            }
+
+        }
+
+
+
+    }
+    
     .ui.container {
         position: relative;
-        
         
         .navigation {
             height: 400px;
@@ -58,6 +155,11 @@ header {
                 margin-left: -2px;
                 
                 transition: all 0.2s linear;
+            }
+            
+            .dot:hover {
+                transform: scale(1.2);
+                cursor: pointer;
             }
             
             .dot:before {
@@ -118,17 +220,18 @@ header {
         
     }
     
-	img {
+	> img {
 		position: absolute;
 		bottom: -5px;
 		left: 50%;
 		margin-left: -50px;
 		width: 100px;
 		cursor: pointer;
+        z-index: 10;
 
-		transition: bottom 0.2s linear;
-		-moz-transition: bottom 0.2s linear;
-		-webkit-transition: bottom 0.2s linear;
+		transition: bottom 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+		-moz-transition: bottom 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+		-webkit-transition: bottom 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
 	}
 
 	img:hover {
@@ -139,7 +242,7 @@ header {
 .page-title {
 	
 	text-align: center;
-	margin: 20px 0px 30px;
+	margin: 0px 0px 30px;
 
 	h1 {
 		position: relative;

@@ -9,20 +9,58 @@
 
 </head>
 <body>
-	<header><?php include 'header.php';?></header>
+    <div class="grayback">
+	<header>
+	<?php include 'header.php';?>
+	
+	
+	</header>
 	
 	<section id="slider">
-		<div class="ui container">
             
-            <div class="slide-1">
-                
-                <div class="text"></div>
-                
+        <div class="slide slide-1">
+            <img src="images/slide-1.png" >
+            <div class="text">
+                <span>BETTER EDUCATION FOR A BETTER WORLD
+                </span>
+
+                <button>READ MORE</button>
             </div>
-            <div class="slide-2"></div>
-            
+
+        </div>
+        <div class="slide slide-2">
+            <img src="images/slide-2.png" >
+            <div class="text">
+                <span>BETTER WORLD FOR A BETTER EDUCATION 
+                </span>
+
+                <button>READ MORE</button>
+            </div>
+
+        </div>
+        <div class="slide slide-3">
+            <img src="images/slide-3.png" >
+            <div class="text">
+                <span>WORLD EDUCATION A BETTER FOR BETTER
+                </span>
+
+                <button>READ MORE</button>
+            </div>
+
+        </div>
+        <div class="slide slide-4">
+            <img src="images/slide-4.png" >
+            <div class="text">
+                <span>BETTER EDUCATION FOR A BETTER WORLD
+                </span>
+
+                <button>READ MORE</button>
+            </div>
+        </div>
+        
+        <div class="ui container">    
             <div class="navigation">
-                <div class="dot active dots-1"></div>
+                <div class="dot dots-1"></div>
                 <div class="dot dots-2"></div>
                 <div class="dot dots-3"></div>
                 <div class="dot dots-4"></div>
@@ -31,7 +69,9 @@
 		</div>
 		<img src="./images/arrow-down.png" >
 	</section>
+	</div>
 
+    <div class="content">
 	<section class="page-title">
 		<div class="ui container">
 			<h1><span>About us</span></h1>
@@ -62,7 +102,7 @@ or randomised words which don't look even slightly believable.</p>
 			<span>Micheal Somone</span>
 		</div>
 	</section>
-
+    </div>
 
 	<footer><?php include 'footer.php';?></footer>
 	<script src="./bower_components/jquery/dist/jquery.min.js"></script>
