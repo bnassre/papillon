@@ -1,0 +1,78 @@
+$purple     : #ae00b4;
+$darkpurple : #8c0090;
+$gray       : #e4e5e7;
+$darkgray   : #676767;
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+
+.contact {
+    
+    .info {
+        background: $purple;
+        color: #fff;
+        padding: 15px;
+        
+        .four {
+            font-family: 'Slabo 27px', serif;
+            font-size: 13pt;
+        }
+        
+        .twelve {
+            text-align: right;
+            font-size: 13pt;
+        }
+    }
+    
+    form {
+        
+        float: right;
+        width: 90%;
+        
+        .column {
+            padding: 6px !important;
+        }
+        
+        .four {
+            text-align: right;
+            
+            label {
+                font-family: 'Slabo 27px', serif;
+                color: $purple;
+                font-size: 12pt;
+                padding-right: 30px;
+            }
+        }
+        
+        input, textarea {
+            width: 100%;
+            resize: none;
+            
+            border: 2px solid #f5e0f6;
+            border-radius: 2px;
+            padding: 8px;
+            margin: 0px;
+        }
+        
+        input[type=submit] {
+            width: auto;
+            float: right;
+            border: none;
+            background: $purple;
+            color: #fff;
+            padding: 8px 25px;
+            font-size: 10pt;
+            margin-top: -6px;
+        }
+        
+    }
+    
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: -150px;
+    position: relative;
+    z-index: 1;
+}
