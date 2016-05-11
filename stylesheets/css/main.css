@@ -246,10 +246,11 @@ header {
       #footer .footer-content .footer-menu ul {
         list-style: none; }
         #footer .footer-content .footer-menu ul li {
-          text-transform: uppercase;
-          color: #fff;
           margin-bottom: 8px; }
-        #footer .footer-content .footer-menu ul li.active {
+          #footer .footer-content .footer-menu ul li a {
+            text-transform: uppercase;
+            color: #fff; }
+        #footer .footer-content .footer-menu ul li.active a {
           color: #000; }
     #footer .footer-content .footer-courses {
       margin-top: 30px; }

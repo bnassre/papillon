@@ -356,12 +356,18 @@ header {
 			ul {
 				list-style: none;
 				li {
-					text-transform: uppercase;
-					color: #fff;
 					margin-bottom: 8px;
+					a{
+						text-transform: uppercase;
+						color: #fff;
+						
+					}
 				}
 				li.active {
-					color: #000;
+					a{
+						color: #000;
+					}
+					
 				}
 			}
 		}

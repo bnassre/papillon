@@ -5,11 +5,11 @@
 			<div class="ui three wide column" style="padding-right: 0px; padding-left: 0px;">
 				<div class="footer-menu">
 					<ul>
-						<li class="active">About us</li>
-						<li>Services</li>
-						<li>Courses</li>
-						<li>Comming Soon</li>
-						<li>Contact</li>
+						<li class="active"><a href="/">About us</a></li>
+						<li> <a href="services.php">Services</a> </li>
+						<li> <a href="courses.php">Courses</a> </li>
+						<li> <a href="comming-soon.php">Comming Soon</a> </li>
+						<li> <a href="contact.php">Contact</a> </li>
 					</ul>
 				</div>
 			</div>
