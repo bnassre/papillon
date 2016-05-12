@@ -5,19 +5,45 @@
   .courses .item {
     margin-bottom: 25px;
     transition: all 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #ae00b4; }
     .courses .item .img-holder {
+      position: relative;
       text-align: center;
       transition: all 0.2s linear; }
-      .courses .item .img-holder img {
+      .courses .item .img-holder:hover .img-overlay {
+        opacity: 1; }
+      .courses .item .img-holder img, .courses .item .img-holder .img-overlay {
         margin: auto auto;
         height: 250px;
         width: 100%; }
+      .courses .item .img-holder .img-overlay {
+        transition: all 0.2s linear;
+        position: absolute;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0; }
+      .courses .item .img-holder button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        background: #ae00b4;
+        border: 0px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;
+        font-size: 21px; }
+        .courses .item .img-holder button i {
+          margin: 0px; }
     .courses .item .desc {
       min-height: 100px;
       background: #fff;
-      text-align: center;
-      padding: 10px 20px;
+      text-align: left;
+      padding: 8px;
       transition: all 0.2s linear; }
       .courses .item .desc h3 {
         font-family: 'Slabo 27px', serif;
@@ -28,32 +54,6 @@
         margin-bottom: 5px; }
       .courses .item .desc p {
         margin: 0px; }
-      .courses .item .desc button {
-        background: #fff;
-        border: none;
-        color: #ae00b4;
-        padding: 10px 30px;
-        font-size: 14pt;
-        margin: 10px 0px;
-        font-family: 'Slabo 27px', serif;
-        font-weight: bold;
-        display: none; }
-        .courses .item .desc button:hover {
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
-        .courses .item .desc button:focus {
-          outline: none; }
-    .courses .item:hover {
-      box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.06);
-      /* transform: scale(1.04); */ }
-      .courses .item:hover .img-holder {
-        background: #8c0090; }
-      .courses .item:hover .desc {
-        background: #ae00b4; }
-        .courses .item:hover .desc h3, .courses .item:hover .desc p {
-          display: none; }
-        .courses .item:hover .desc button {
-          margin-top: 20px;
-          display: inline-block; }
   .courses .overlay {
     background: #fff;
     position: absolute;

@@ -10,7 +10,16 @@
     width: 160px;
     margin: 0 auto;
     background-position: 50% 50% !important;
-    border-radius: 50%; }
+    border-radius: 50%;
+    text-align: center; }
+  .team .members .team-name {
+    padding-top: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ae00b4; }
   .team .members .member1, .team .members .member8 {
     background: url("../../../images/aboutus/team1.png"); }
   .team .members .member2, .team .members .member7 {

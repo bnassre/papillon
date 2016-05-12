@@ -28,8 +28,11 @@
                     <div class="column">
                         <div class="item">
                             <div class="img-holder">
-                              <img src="./images/courses/course1.png">
-                              <button>+ &nbsp;More</button>
+                              <img src="./images/courses/course1.png"> 
+                              <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
+                              
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>
@@ -43,7 +46,9 @@
                         <div class="item">
                             <div class="img-holder">
                               <img src="./images/courses/course2.png">
-                              <button>+ &nbsp;More</button>
+                              <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>
@@ -57,7 +62,9 @@
                         <div class="item">
                             <div class="img-holder">
                               <img src="./images/courses/course3.png">
-                              <button>+ &nbsp;More</button>
+                              <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>
@@ -71,7 +78,9 @@
                         <div class="item">
                             <div class="img-holder">
                               <img src="./images/courses/course4.png">
-                              <button>+ &nbsp;More</button>
+                              <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>
@@ -85,7 +94,9 @@
                         <div class="item">
                             <div class="img-holder">
                               <img src="./images/courses/course4.png">
-                              <button>+ &nbsp;More</button>
+                              <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>
@@ -99,7 +110,9 @@
                         <div class="item">
                             <div class="img-holder">
                              <img src="./images/courses/course3.png">
-                             <button>+ &nbsp;More</button>
+                             <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>
@@ -113,7 +126,9 @@
                         <div class="item">
                             <div class="img-holder">
                               <img src="./images/courses/course2.png">
-                              <button>+ &nbsp;More</button>
+                              <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>
@@ -127,7 +142,9 @@
                         <div class="item">
                             <div class="img-holder">
                               <img src="./images/courses/course1.png">
-                              <button>+ &nbsp;More</button>
+                              <div class="img-overlay">
+                                  <button><i class="plus icon"></i></button>
+                              </div>
                             </div>
                             <div class="desc">
                                 <h3>From Zero to Hero with Nodejs </h3>

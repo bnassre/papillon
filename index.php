@@ -51,30 +51,38 @@
 			<div class="ui stackable grid members">
 				<div class="four wide column">
 					<div class="team-member member1"></div>
+					<span class="team-name">Carl Smith</span>
 				</div>
 				<div class="four wide column">
 					<div class="team-member member2"></div>
+					<span class="team-name">Dave Didges</span>
 				</div>
 				<div class="four wide column">
 					<div class="team-member member3"></div>
+					<span class="team-name">Jasmine Mayer</span>
 				</div>
 				<div class="four wide column">
 					<div class="team-member member4"></div>
+					<span class="team-name">Laila Bridget</span>
 				</div>
 			</div>
 			<br>
 			<div class="ui stackable grid members">
 				<div class="four wide column">
 					<div class="team-member member5"></div>
+					<span class="team-name">Laila Bridget</span>
 				</div>
 				<div class="four wide column">
 					<div class="team-member member6"></div>
+					<span class="team-name">Jasmine Mayer</span>
 				</div>
 				<div class="four wide column">
 					<div class="team-member member7"></div>
+					<span class="team-name">Dave Didges</span>
 				</div>
 				<div class="four wide column">
 					<div class="team-member member8"></div>
+					<span class="team-name">Carl Smith</span>
 				</div>
 
 			</div>
