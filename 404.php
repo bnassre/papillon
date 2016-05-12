@@ -33,7 +33,11 @@
 
 	<div class="errorpage content">
 		<center>
-			<h2>404</h2>
+			<h2>
+			    <div>4</div>
+			    <div>0</div>
+			    <div>4</div>
+			 </h2>
 			<p>page not found</p>
 		</center>
 	</div>

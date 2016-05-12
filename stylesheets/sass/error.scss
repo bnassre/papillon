@@ -3,19 +3,46 @@ $darkpurple : #8c0090;
 $gray       : #e4e5e7;
 $darkgray   : #676767;
 
-@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 
 .errorpage {
     h2 {
         font-family: 'Roboto Slab', serif;
-        color: $purple;
-        font-size: 84pt;
+        color: #ae00b4;
+        font-size: 120pt;
         font-weight: normal;
+        margin: 0px;
+        letter-spacing: -25px;
+        position: relative;
+        margin-top: 50px;
+        
+        & > div {
+            display: inline-block;
+            
+            &:first-child {
+                vertical-align: middle;
+            }
+            
+            &:nth-child(2) {
+                
+            }
+            
+            &:last-child {
+                vertical-align: sub;
+                position: relative;
+                
+            }
+            
+        }
+        
     }
     
     p {
         font-family: 'Slabo 27px', serif;
         font-size: 30pt;
+        margin-top: -30px;
+        padding-left: 15px; 
+        margin-bottom: 120px;
+        font-weight: bold;
     }
 }
