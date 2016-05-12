@@ -10,7 +10,7 @@
 			        <a href="/" class="<?= route() == '' ? 'active' : '' ?> item">ABOUT US</a>
 			        <a href="services.php" class="<?= route() == 'services' ? 'active' : '' ?> item">SERVICES</a>
                     <a href="courses.php"  class="<?= route() == 'courses' ? 'active' : '' ?> item">COURSES</a>
-                    <a href="comming-soon.php"  class="<?= route() == 'comming-soon' ? 'active' : '' ?> item">COMMING SOON</a>
+                    <a href="coming-soon.php"  class="<?= route() == 'coming-soon' ? 'active' : '' ?> item">COMING SOON</a>
 			        <a href="contact.php"  class="<?= route() == 'contact' ? 'active' : '' ?> item">CONTACT</a>
 		        </div>
 		    </div>

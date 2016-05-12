@@ -126,6 +126,7 @@
                 },
                 streetViewControl: false,
                 rotateControl: false,
+                scrollwheel: false,
                 zoom: 18
               });
             

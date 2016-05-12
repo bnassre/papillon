@@ -1,0 +1,21 @@
+$purple     : #ae00b4;
+$darkpurple : #8c0090;
+$gray       : #e4e5e7;
+$darkgray   : #676767;
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+.errorpage {
+    h2 {
+        font-family: 'Roboto Slab', serif;
+        color: $purple;
+        font-size: 84pt;
+        font-weight: normal;
+    }
+    
+    p {
+        font-family: 'Slabo 27px', serif;
+        font-size: 30pt;
+    }
+}

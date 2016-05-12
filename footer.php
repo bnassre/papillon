@@ -14,8 +14,8 @@
 						<li  class="<?= route() == 'courses' ? 'active' : '' ?>">
 							<a href="courses.php">Courses</a>
 						</li>
-						<li  class="<?= route() == 'comming-soon' ? 'active' : '' ?>">
-							<a href="comming-soon.php">Comming Soon</a>
+						<li  class="<?= route() == 'coming-soon' ? 'active' : '' ?>">
+							<a href="coming-soon.php">Coming Soon</a>
 						</li>
 						<li  class="<?= route() == 'contact' ? 'active' : '' ?>">
 							<a href="contact.php">Contact</a>
