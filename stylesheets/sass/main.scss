@@ -545,8 +545,28 @@ header {
 	    top: 152px;
 	    width: 100%;
 	}
-
-	.ui.vertical.segment.open {
+    
+    #slider .slide img {
+        left: -160px;
+        top: -74px;
+    }
+    
+    #slider .slide .text {
+        width: 600px;
+        left: -4px;
+    }
+    
+    #slider .slide .text span {
+        min-width: 650px;
+        max-width: 650px;
+    }
+    
+    #slider .ui.container .navigation {
+        margin-top: 40px;
+        margin-left: 35px;
+    }
+	
+    .ui.vertical.segment.open {
 		height: 330px;
 	}
 
