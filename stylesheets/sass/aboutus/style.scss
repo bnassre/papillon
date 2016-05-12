@@ -6,14 +6,18 @@ $darkgray   : #676767;
 .image {
 	text-align: center;
 	img{
-		height: 300px; 
+		width: 100%; 
 	} 
 }
 
 .team {
-	margin-top: 50px;
+	margin-top: 20px;
+    
+    padding: 35px 0px;
+    background: #fafafa;
 	
 	.members {
+        margin-top: 20px; 
 		.team-member {
 			height: 160px;
 			width: 160px;
@@ -32,6 +36,8 @@ $darkgray   : #676767;
 		    font-size: 20px;
     		text-transform: capitalize;
 			color: $purple;
+            font-family: 'Slabo 27px', serif;
+            margin-top: 10px;
 		}
 
 		.member1, .member8 {
