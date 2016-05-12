@@ -4,7 +4,8 @@
 		<div class="ui container">
 			<div class="ui large secondary menu">
 		       	<a class="item logo">
-					<img src="./images/logo.png" alt="logo">
+                    <!--<img src="./images/logo.png" alt="logo">-->
+					<img src="./images/footer/logo.png" alt="logo">
 		       	</a>
 		       	<div class="right menu">
 			        <a href="/" class="<?= route() == '' ? 'active' : '' ?> item">ABOUT US</a>

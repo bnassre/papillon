@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+body {
+  font-family: 'Segoe UI'; }
+
 .ui.grid {
   margin: 0px; }
 
@@ -239,7 +242,8 @@ header {
     padding: 30px;
     margin: 0 auto;
     position: relative;
-    font-size: 18pt; }
+    font-size: 18pt;
+    font-family: 'Slabo 27px', serif; }
   #quote p:before, #quote p:after {
     display: inline-block;
     content: '';
@@ -255,7 +259,7 @@ header {
     right: -30px;
     bottom: -5px; }
   #quote span {
-    color: #e4e5e7;
+    color: #c6c6c6;
     font-size: 14pt; }
   #quote span:before {
     content: '---------';
