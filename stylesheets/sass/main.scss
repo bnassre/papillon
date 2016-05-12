@@ -144,14 +144,20 @@ header {
                 font-size: 15pt;
                 background: none;
                 color: $purple;
+                
+                &:hover {
+                    background: $purple;
+                    color: #fff;
+
+                    transition: all 0.2s linear;
+                }
+                
+                &:focus {
+                    outline: none;
+                }
             }
 
-            button:hover {
-                background: $purple;
-                color: #fff;
-
-                transition: all 0.2s linear;
-            }
+            
 
         }
 
