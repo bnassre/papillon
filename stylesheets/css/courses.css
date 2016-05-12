@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px);
+.courses {
+  margin-bottom: 50px;
+  position: relative; }
+  .courses .item {
+    margin-bottom: 25px;
+    transition: all 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+    .courses .item .img-holder {
+      text-align: center;
+      transition: all 0.2s linear; }
+      .courses .item .img-holder img {
+        margin: auto auto;
+        height: 250px;
+        width: 100%; }
+    .courses .item .desc {
+      min-height: 100px;
+      background: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      transition: all 0.2s linear; }
+      .courses .item .desc h3 {
+        font-family: 'Slabo 27px', serif;
+        font-weight: normal;
+        color: #ae00b4;
+        font-size: 18pt;
+        margin: 0px;
+        margin-bottom: 5px; }
+      .courses .item .desc p {
+        margin: 0px; }
+      .courses .item .desc button {
+        background: #fff;
+        border: none;
+        color: #ae00b4;
+        padding: 10px 30px;
+        font-size: 14pt;
+        margin: 10px 0px;
+        font-family: 'Slabo 27px', serif;
+        font-weight: bold;
+        display: none; }
+        .courses .item .desc button:hover {
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+        .courses .item .desc button:focus {
+          outline: none; }
+    .courses .item:hover {
+      box-shadow: 3px 3px 0px 2px rgba(0, 0, 0, 0.06);
+      /* transform: scale(1.04); */ }
+      .courses .item:hover .img-holder {
+        background: #8c0090; }
+      .courses .item:hover .desc {
+        background: #ae00b4; }
+        .courses .item:hover .desc h3, .courses .item:hover .desc p {
+          display: none; }
+        .courses .item:hover .desc button {
+          margin-top: 20px;
+          display: inline-block; }
+  .courses .overlay {
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    z-index: 11;
+    text-align: center;
+    padding: 100px 150px;
+    display: none; }
+    .courses .overlay img {
+      width: 200px;
+      margin-bottom: 20px; }
+    .courses .overlay h3 {
+      font-family: 'Slabo 27px', serif;
+      font-weight: normal;
+      color: #ae00b4;
+      font-size: 18pt;
+      margin: 0px;
+      margin-bottom: 5px; }
+    .courses .overlay span {
+      color: #676767;
+      margin-bottom: 30px;
+      display: inline-block;
+      width: 300px; }
+    .courses .overlay p {
+      color: #ae00b4; }
+    .courses .overlay .close {
+      position: absolute;
+      top: 35px;
+      right: 35px;
+      width: 31px;
+      height: 31px;
+      background: url("../../images/close-btn.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+      transition: all 0.3s linear; }
+      .courses .overlay .close:hover {
+        transform: rotate(360deg); }
