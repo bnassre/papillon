@@ -15,6 +15,7 @@ $darkgray   : #676767;
         letter-spacing: -25px;
         position: relative;
         margin-top: 50px;
+        margin-left: -15px;
         
         & > div {
             display: inline-block;
@@ -40,8 +41,7 @@ $darkgray   : #676767;
     p {
         font-family: 'Slabo 27px', serif;
         font-size: 30pt;
-        margin-top: -30px;
-        padding-left: 15px; 
+        margin-top: -30px; 
         margin-bottom: 120px;
         font-weight: bold;
     }
