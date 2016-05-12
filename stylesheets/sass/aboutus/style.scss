@@ -1,0 +1,55 @@
+$purple     : #ae00b4;
+$darkpurple : #8c0090;
+$gray       : #e4e5e7;
+$darkgray   : #676767;
+
+.image {
+	text-align: center;
+	img{
+		height: 300px; 
+	} 
+}
+
+.text {
+	font-size: 20px;
+}
+
+.team {
+	margin-top: 50px;
+	.header {
+
+		h1{
+			display: inline-block;
+			color: $purple;
+			font-size: 32px;
+			font-weight: normal;
+		}
+
+		span {
+			color: $darkgray;
+			font-size: 16px;
+		}
+	}
+
+	.members {
+		.team-member {
+			height: 160px;
+			width: 160px;
+			margin: 0 auto;
+			background-position: 50% 50% !important;
+			border-radius: 50%;
+		}
+		.member1, .member8 {
+			background: url("../../../images/aboutus/team1.png");
+		}
+		.member2, .member7 {
+			background: url("../../../images/aboutus/team2.png");
+		}
+		.member3, .member6 {
+			background: url("../../../images/aboutus/team3.png");
+		}
+		.member4, .member5 {
+			background: url("../../../images/aboutus/team4.png");
+		}
+	}
+}

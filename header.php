@@ -3,13 +3,15 @@
 	<div class="ui vertical segment">
 		<div class="ui container">
 			<div class="ui large secondary menu">
-		       	<a class="item">
-					<img src="" alt="">
+		       	<a class="item logo">
+					<img src="./images/logo.png" alt="logo">
 		       	</a>
-		       	<div class="right item">
-			        <a class="active item">Work</a>
-			        <a class="item">Company</a>
-			        <a class="item">Careers</a>
+		       	<div class="right menu">
+			        <a href="/" class="<?= route() == '' ? 'active' : '' ?> item">ABOUT US</a>
+			        <a href="services.php" class="<?= route() == 'services' ? 'active' : '' ?> item">SERVICES</a>
+                    <a href="courses.php"  class="<?= route() == 'courses' ? 'active' : '' ?> item">COURSES</a>
+                    <a href="comming-soon.php"  class="<?= route() == 'comming-soon' ? 'active' : '' ?> item">COMMING SOON</a>
+			        <a href="contact.php"  class="<?= route() == 'contact' ? 'active' : '' ?> item">CONTACT</a>
 		        </div>
 		    </div>
 		</div>
@@ -71,3 +73,15 @@
 		<img class="getdown" src="./images/arrow-down.png" >
 	</section>
 </div>
+
+
+<?php
+
+        function route(){
+          $requestURI =  sprintf("%s", $_SERVER['REQUEST_URI']);
+          $route = explode("/", $requestURI);
+          $route = explode("?", $route[1]);
+          return $route[0];
+        }
+
+    ?>

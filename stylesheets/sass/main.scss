@@ -5,6 +5,10 @@ $darkgray   : #676767;
 
 @import url(https://fonts.googleapis.com/css?family=Slabo+27px);
 
+// * {
+// 	font-family: 'Slabo 27px', serif;
+// }
+
 .ui.grid {
 	margin: 0px;
 }
@@ -25,6 +29,26 @@ header {
 	overflow-x: hidden;
     position: relative;
     z-index: 10;
+	
+	.logo {
+		height: 120px;
+		width: 110px;
+		img {
+			width: 100% !important;
+			height: 100% !important;
+		}
+	}
+
+	.menu {
+		a {
+			color: #fff !important;
+		}
+		a.active {
+			color: #000 !important;
+			border-bottom: 2px solid #000 !important;
+			border-radius: 0px !important;
+		}
+	}
 
 	.ui.segment {
 		background: $purple !important;
@@ -288,6 +312,7 @@ header {
 #quote {
 	
 	text-align: center;
+	margin-top: 50px;
 
 	p {
 		color: $purple;
@@ -427,6 +452,7 @@ header {
 		    height: 270px;
 		    position: relative;
 		    top: -103px;
+		    right: 50px;
 		}
 		.share {
 			background: url("../../images/footer/arrow-social.png");

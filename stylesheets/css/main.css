@@ -15,6 +15,18 @@ header {
   overflow-x: hidden;
   position: relative;
   z-index: 10; }
+  header .logo {
+    height: 120px;
+    width: 110px; }
+    header .logo img {
+      width: 100% !important;
+      height: 100% !important; }
+  header .menu a {
+    color: #fff !important; }
+  header .menu a.active {
+    color: #000 !important;
+    border-bottom: 2px solid #000 !important;
+    border-radius: 0px !important; }
   header .ui.segment {
     background: #ae00b4 !important;
     height: 100px; }
@@ -198,7 +210,8 @@ header {
     margin: 0 auto; }
 
 #quote {
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
   #quote p {
     color: #ae00b4;
     width: 80%;
@@ -292,7 +305,8 @@ header {
       width: 270px;
       height: 270px;
       position: relative;
-      top: -103px; }
+      top: -103px;
+      right: 50px; }
     #footer .footer-content .share {
       background: url("../../images/footer/arrow-social.png");
       background-repeat: no-repeat;

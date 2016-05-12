@@ -5,11 +5,21 @@
 			<div class="ui three wide column" style="padding-right: 0px; padding-left: 0px;">
 				<div class="footer-menu">
 					<ul>
-						<li class="active"><a href="/">About us</a></li>
-						<li> <a href="services.php">Services</a> </li>
-						<li> <a href="courses.php">Courses</a> </li>
-						<li> <a href="comming-soon.php">Comming Soon</a> </li>
-						<li> <a href="contact.php">Contact</a> </li>
+						<li class="<?= route() =='' ? 'active' : '' ?>">
+							<a href="/">About us</a>
+						</li>
+						<li  class="<?= route() == 'services' ? 'active' : '' ?>">
+							<a href="services.php">Services</a>
+						</li>
+						<li  class="<?= route() == 'courses' ? 'active' : '' ?>">
+							<a href="courses.php">Courses</a>
+						</li>
+						<li  class="<?= route() == 'comming-soon' ? 'active' : '' ?>">
+							<a href="comming-soon.php">Comming Soon</a>
+						</li>
+						<li  class="<?= route() == 'contact' ? 'active' : '' ?>">
+							<a href="contact.php">Contact</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -82,3 +92,4 @@
 		
 	</div>
 </section>
+

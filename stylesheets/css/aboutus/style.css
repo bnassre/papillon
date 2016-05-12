@@ -1,0 +1,32 @@
+.image {
+  text-align: center; }
+  .image img {
+    height: 300px; }
+
+.text {
+  font-size: 20px; }
+
+.team {
+  margin-top: 50px; }
+  .team .header h1 {
+    display: inline-block;
+    color: #ae00b4;
+    font-size: 32px;
+    font-weight: normal; }
+  .team .header span {
+    color: #676767;
+    font-size: 16px; }
+  .team .members .team-member {
+    height: 160px;
+    width: 160px;
+    margin: 0 auto;
+    background-position: 50% 50% !important;
+    border-radius: 50%; }
+  .team .members .member1, .team .members .member8 {
+    background: url("../../../images/aboutus/team1.png"); }
+  .team .members .member2, .team .members .member7 {
+    background: url("../../../images/aboutus/team2.png"); }
+  .team .members .member3, .team .members .member6 {
+    background: url("../../../images/aboutus/team3.png"); }
+  .team .members .member4, .team .members .member5 {
+    background: url("../../../images/aboutus/team4.png"); }
