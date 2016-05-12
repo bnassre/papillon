@@ -33,10 +33,16 @@ header {
 	.logo {
 		height: 120px;
 		width: 110px;
+        padding: 0px !important;
+        margin: 0px !important;
 		img {
-			width: 100% !important;
-			height: 100% !important;
+			width: 100px !important;
+			/* height: 100% !important; */
 		}
+        
+        &:hover {
+            background: none !important;
+        }
 	}
 
 	.menu {
@@ -61,12 +67,28 @@ header {
 		height: 100px;
 		background-repeat: no-repeat;
 		margin: 0px -150px;
+        margin-top: -1px;
 	}
 }
 
 .grayback {
     background: $gray;
     height: 100%;
+}
+
+.header h1 {
+    display: inline-block;
+    color: #ae00b4;
+    font-size: 22pt;
+    font-weight: normal;
+    font-family: 'Slabo 27px', serif;
+}
+
+.header span {
+    font-weight: normal;
+    font-size: 11pt;
+    line-height: 1;
+    color: $darkgray;
 }
 
 #slider {
@@ -172,6 +194,7 @@ header {
             height: 400px;
             width: 10px;
             display: inline-block;
+            margin-top: 10%;
             
             .dot {
                 position: relative;
@@ -367,12 +390,14 @@ header {
 #footer {
 	color: #fff;
 	margin-top: 60px;
+    position: relative;
+    z-index: 11;
 
 	.ribbon {
 		background: url('../../images/footer-curve.png');
 		background-position: left top;
 		background-repeat: no-repeat;
-
+        margin-bottom: -1px;
 		height: 44px;
 	}
 
@@ -458,7 +483,7 @@ header {
 		    height: 270px;
 		    position: relative;
 		    top: -103px;
-		    right: 50px;
+		    right: 90px;
 		}
 		.share {
 			background: url("../../images/footer/arrow-social.png");
