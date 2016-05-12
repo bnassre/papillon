@@ -505,3 +505,83 @@ header {
 	background: $darkpurple;
 	padding: 20px
 }
+
+
+.mobile-menu {
+	height: 36px;
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    cursor: pointer;
+    &:hover {
+    	 span {
+		    background: #cfcfcf;
+		}
+    }
+    span {
+	    display: block;
+	    width: 100%;
+	    height: 4px;
+	    background: #fff;
+	    margin-top: 6px;
+	}
+}
+
+
+@media screen and (max-width: 767px){
+
+	.menu.right {
+		display: none !important;
+		height: 230px;
+	    top: 70px;
+	    left: 0px;
+	    position: absolute;
+	    top: 152px;
+	    width: 100%;
+	}
+
+	.ui.vertical.segment.open {
+		height: 330px;
+	}
+
+	#quote p {
+		font-size: 15pt;
+		padding: 10px;
+
+	 	&:before, &:after {
+			width: 35px;
+	    	height: 35px;
+	    	background-size: cover;
+	    }
+	}
+
+	#footer .footer-content .contact-content {
+		position: static;
+
+	}
+
+	#footer .footer-content .logo {
+		position: static;
+		width: 100px;
+    	height: 100px;
+    	display: inline-block;
+    	img {
+    		width: 100%;
+    		height: 100%;
+    	}
+	}
+
+	#footer .footer-content .share {
+		display: inline-block;
+	    margin-top: -65px;
+	    height: 100px;
+	    top: -16px;
+	    position: relative;
+	    margin-left: 20px;
+	}
+
+	#footer .footer-content .share .socials img {
+	    padding-right: 15px;
+	}
+}

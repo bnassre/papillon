@@ -13,6 +13,12 @@
                     <a href="coming-soon.php"  class="<?= route() == 'coming-soon' ? 'active' : '' ?> item">COMING SOON</a>
 			        <a href="contact.php"  class="<?= route() == 'contact' ? 'active' : '' ?> item">CONTACT</a>
 		        </div>
+
+                <div class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
 		    </div>
 		</div>
 	</div>
@@ -75,13 +81,15 @@
 </div>
 
 
+
+
 <?php
 
-        function route(){
-          $requestURI =  sprintf("%s", $_SERVER['REQUEST_URI']);
-          $route = explode("/", $requestURI);
-          $route = explode("?", $route[1]);
-          return $route[0];
-        }
+    function route(){
+      $requestURI =  sprintf("%s", $_SERVER['REQUEST_URI']);
+      $route = explode("/", $requestURI);
+      $route = explode("?", $route[1]);
+      return $route[0];
+    }
 
-    ?>
+?>

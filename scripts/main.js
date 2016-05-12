@@ -42,5 +42,10 @@ $(document).ready(function() {
     $('.getdown').click(function() {
         $('html, body').animate({ scrollTop : window.innerHeight}, 300);
     });
+
+    $('.mobile-menu').click(function() {
+        $("header .ui.vertical.segment").addClass("open");
+        $("header .right.menu").attr("style", "display: block !important;").slideDown(300);
+    });
     
 });
