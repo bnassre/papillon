@@ -513,6 +513,7 @@ header {
 
 
 .mobile-menu {
+	display: none;
 	height: 36px;
     width: 40px;
     position: absolute;
@@ -535,7 +536,10 @@ header {
 
 
 @media screen and (max-width: 767px){
-
+	
+	.mobile-menu {
+		display: block; 
+	}
 	.menu.right {
 		display: none !important;
 		height: 230px;
