@@ -30,7 +30,7 @@
                             <div class="img-holder">
                               <img src="./images/courses/course1.png"> 
                               <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                               
                             </div>
@@ -47,7 +47,7 @@
                             <div class="img-holder">
                               <img src="./images/courses/course2.png">
                               <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                             </div>
                             <div class="desc">
@@ -63,7 +63,7 @@
                             <div class="img-holder">
                               <img src="./images/courses/course3.png">
                               <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                             </div>
                             <div class="desc">
@@ -79,7 +79,7 @@
                             <div class="img-holder">
                               <img src="./images/courses/course4.png">
                               <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                             </div>
                             <div class="desc">
@@ -95,7 +95,7 @@
                             <div class="img-holder">
                               <img src="./images/courses/course4.png">
                               <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                             </div>
                             <div class="desc">
@@ -111,7 +111,7 @@
                             <div class="img-holder">
                              <img src="./images/courses/course3.png">
                              <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                             </div>
                             <div class="desc">
@@ -127,7 +127,7 @@
                             <div class="img-holder">
                               <img src="./images/courses/course2.png">
                               <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                             </div>
                             <div class="desc">
@@ -143,7 +143,7 @@
                             <div class="img-holder">
                               <img src="./images/courses/course1.png">
                               <div class="img-overlay">
-                                  <button><i class="plus icon"></i></button>
+                                  <button>+</button>
                               </div>
                             </div>
                             <div class="desc">
