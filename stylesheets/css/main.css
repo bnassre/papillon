@@ -368,8 +368,8 @@ header {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: block; }
-  .menu.right {
-    display: none !important;
+  .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
+    display: none;
     height: 230px;
     top: 70px;
     left: 0px;
@@ -377,7 +377,10 @@ header {
     top: 152px;
     width: 100%; }
   .ui.vertical.segment.open {
-    height: 330px; }
+    height: 330px;
+    transition: all 0.25s cubic-bezier(0.62, 0.03, 0.24, 0.45);
+    animation: anim-jelly 0.8s linear forwards;
+    -webkit-animation: anim-jelly 0.8s linear forwards; }
   #quote p {
     font-size: 15pt;
     padding: 10px; }
@@ -385,6 +388,11 @@ header {
       width: 35px;
       height: 35px;
       background-size: cover; }
+  .page-title p {
+    width: 90%; }
+  .page-title h1:before {
+    margin-left: -30%;
+    width: 60%; }
   #footer .footer-content .contact-content {
     position: static; }
   #footer .footer-content .logo {

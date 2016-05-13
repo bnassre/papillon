@@ -15,12 +15,12 @@
     <div class="content">
 	<section class="page-title">
 		<div class="ui container">
-			<h1><span>About us</span></h1>
+			<h1><span>Coming Soon</span></h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloremque error autem non corrupti repudiandae repellendus quaerat quae voluptas.</p>
 		</div>
 	</section>
 
-	<section>
+	<!-- <section>
 		<div class="ui container">
 			<div class="ui stackable grid">
 				<div class="seven wide column">
@@ -33,7 +33,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section id="quote">
 		<div class="ui container">
