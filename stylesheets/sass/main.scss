@@ -80,6 +80,11 @@ header {
     height: 100%;
 }
 
+.grayback.page_404 {
+    background: #fff;
+}
+
+.404
 .header h1 {
     display: inline-block;
     color: #ae00b4;
@@ -190,7 +195,8 @@ header {
 
 
     }
-    
+
+
     .ui.container {
         position: relative;
         
@@ -295,6 +301,11 @@ header {
 		bottom: 0px;
 	}
 }
+
+.page_404#slider {
+	display: none;
+}
+
 
 .page-title {
 	

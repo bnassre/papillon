@@ -49,6 +49,10 @@ header {
   background: #e4e5e7;
   height: 100%; }
 
+.grayback.page_404 {
+  background: #fff; }
+
+.404
 .header h1 {
   display: inline-block;
   color: #ae00b4;
@@ -199,6 +203,9 @@ header {
     -webkit-transition: bottom 0.2s cubic-bezier(0.64, 0.57, 0.67, 1.53); }
   #slider img:hover {
     bottom: 0px; }
+
+.page_404#slider {
+  display: none; }
 
 .page-title {
   text-align: center;

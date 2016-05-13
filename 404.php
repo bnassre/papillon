@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Papillon</title>
-
+	<title>404</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./bower_components/semantic/dist/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/css/error.css">
@@ -11,26 +11,7 @@
 </head>
 <body>
     
-	<header>
-	<div class="ui vertical segment">
-		<div class="ui container">
-			<div class="ui large secondary menu">
-		       	<a class="item logo">
-					<img src="./images/logo.png" alt="logo">
-		       	</a>
-		       	<div class="right menu">
-			        <a href="/" class="<?= route() == '' ? 'active' : '' ?> item">ABOUT US</a>
-			        <a href="services.php" class="<?= route() == 'services' ? 'active' : '' ?> item">SERVICES</a>
-                    <a href="courses.php"  class="<?= route() == 'courses' ? 'active' : '' ?> item">COURSES</a>
-                    <a href="coming-soon.php"  class="<?= route() == 'coming-soon' ? 'active' : '' ?> item">COMING SOON</a>
-			        <a href="contact.php"  class="<?= route() == 'contact' ? 'active' : '' ?> item">CONTACT</a>
-		        </div>
-		    </div>
-		</div>
-	</div>
-	<div class="curve"></div>
-	</header>
-
+	<header><?php include 'header.php';?></header>
 	<div class="errorpage content">
 		<center>
 			<h2>
@@ -49,14 +30,3 @@
 </body>
 </html>
 
-
-<?php
-
-    function route(){
-      $requestURI =  sprintf("%s", $_SERVER['REQUEST_URI']);
-      $route = explode("/", $requestURI);
-      $route = explode("?", $route[1]);
-      return $route[0];
-    }
-
-?>
