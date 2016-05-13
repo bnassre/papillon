@@ -80,7 +80,7 @@
 					<div class="socials">
 						<img src="./images/footer/facebook.png" alt="facebook">
 						<img src="./images/footer/twitter.png" alt="twitter">
-						<img src="./images/footer/youtube.png" alt="youtube">
+						<img src="./images/footer/youTube.png" alt="youtube">
 					</div>
 				</div>
 			</div>
