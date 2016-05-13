@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Papillon</title>
+	<title>PAPILLON Educational Group, LLC | Coming Soon</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./bower_components/semantic/dist/semantic.min.css">
 	<link rel="stylesheet" type="text/css" href="./stylesheets/css/main.css">
