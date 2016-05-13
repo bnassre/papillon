@@ -7,7 +7,7 @@
 	<div class="ui vertical segment">
 		<div class="ui container">
 			<div class="ui large secondary menu">
-		       	<a class="item logo">
+		       	<a href="/" class="item logo">
                     <!--<img src="./images/logo.png" alt="logo">-->
 					<img src="./images/footer/logo.png" alt="logo">
 		       	</a>
