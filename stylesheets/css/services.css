@@ -95,3 +95,7 @@
       transition: all 0.3s linear; }
       .services .overlay .close:hover {
         transform: rotate(360deg); }
+
+@media screen and (max-width: 767px) {
+  .services .overlay {
+    padding: 100px 30px; } }
