@@ -40,8 +40,10 @@
 	</div>
 	<div class="curve "></div>
 	</header>
-	
-    	<section id="slider" class="page_<?= route() ?>">
+	   
+
+       <?php if (route() == "") { ?>
+            <section id="slider" class="page_<?= route() ?>">
                 
             <div class="slide slide-1">
                 <img src="images/slide-1.png" >
@@ -91,9 +93,11 @@
                     <div class="dot dots-4"></div>
                 </div>
                 
-    		</div>
-    		<img class="getdown" src="./images/arrow-down.png" >
-    	</section>
+            </div>
+            <img class="getdown" src="./images/arrow-down.png" >
+        </section>
+       <?php } ?>
+    	
     
 </div>
 

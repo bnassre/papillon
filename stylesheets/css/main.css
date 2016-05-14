@@ -45,7 +45,7 @@ header {
     margin: 0px -150px;
     margin-top: -1px; }
 
-.grayback {
+.grayback.page_ {
   background: #e4e5e7;
   height: 100%; }
 
@@ -95,7 +95,7 @@ header {
             width: 800px; */
       height: 800px;
       width: 600px;
-      right: -200px;
+      right: -300px;
       top: -200px;
       background: rgba(0, 0, 0, 0.14);
       border-radius: 10%;
@@ -241,7 +241,7 @@ header {
 
 #quote {
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 25px; }
   #quote p {
     color: #ae00b4;
     width: 80%;
@@ -327,7 +327,8 @@ header {
           display: block; }
     #footer .footer-content .contact-content {
       position: absolute;
-      bottom: 20px; }
+      bottom: 20px;
+      left: 60px; }
       #footer .footer-content .contact-content h3 {
         margin: 0; }
       #footer .footer-content .contact-content .left, #footer .footer-content .contact-content .right {
@@ -372,6 +373,8 @@ header {
     margin-top: 6px; }
 
 @media screen and (max-width: 767px) {
+  header .curve {
+    height: 35px; }
   .mobile-menu {
     display: block; }
   .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu {
@@ -386,11 +389,14 @@ header {
     left: -160px;
     top: -74px; }
   #slider .slide .text {
-    width: 600px;
+    width: 0 !important;
     left: -4px; }
   #slider .slide .text span {
     min-width: 650px;
     max-width: 650px; }
+  #slider .slide .text button {
+    width: 150px;
+    padding: 10px; }
   #slider .ui.container .navigation {
     margin-top: 40px;
     margin-left: 35px; }
@@ -409,8 +415,8 @@ header {
   .page-title p {
     width: 90%; }
   .page-title h1:before {
-    margin-left: -30%;
-    width: 60%; }
+    margin-left: -44.5%;
+    width: 90%; }
   #footer .footer-content .contact-content {
     position: static; }
   #footer .footer-content .logo {
@@ -425,7 +431,8 @@ header {
     display: inline-block;
     margin-top: -65px;
     height: 100px;
-    top: -16px;
+    left: 100px;
+    top: -35px;
     position: relative;
     margin-left: 20px; }
   #footer .footer-content .share .socials img {
